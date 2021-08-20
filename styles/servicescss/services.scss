@@ -1,0 +1,279 @@
+.services {
+  margin: 7em 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.services_container {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.service-h1 {
+  font-weight: 500;
+  font-size: 2em;
+  position: relative;
+  text-transform: uppercase;
+  &::before {
+    content: "";
+    width: 1.5em;
+    top: 0.7em;
+    left: -2em;
+    border-radius: 5px;
+    height: 0.05em;
+    background: rgb(33, 122, 255);
+    position: absolute;
+  }
+  &::after {
+    content: "";
+    width: 1.5em;
+    top: 0.7em;
+    right: -2em;
+    border-radius: 5px;
+    height: 0.05em;
+    background: rgb(33, 122, 255);
+    position: absolute;
+  }
+}
+.service-p {
+  color: #666;
+  padding: 0.5em;
+}
+.service_card {
+  width: 100%;
+  display: flex;
+  margin-top: 3em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: 3px;
+  .circle {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background: rgb(33, 122, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fas {
+    font-size: 1.7em;
+    color: #fff;
+  }
+  h1 {
+    padding: 0.5em 0;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+  }
+  p {
+    padding: 0.5em 0;
+    font-size: 0.9em;
+  }
+}
+.inner {
+  padding: 1em 0;
+}
+.more_container {
+  width: 100%;
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.txt {
+  width: 90%;
+  background: rgba(245, 245, 245, 0.884);
+  position: absolute;
+  padding: 1em;
+  border-radius: 5px;
+  bottom: 1em;
+  left: 1em;
+  transition: 0.3s all ease-in-out;
+  h1 {
+    font-size: 1.3em;
+    padding: 0.3em 0;
+    text-align: center;
+  }
+  p {
+    font-size: 1em;
+    font-weight: 300;
+    padding: 0.3em 0.5em;
+  }
+  a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 300;
+    font-size: 0.9em;
+    .fas {
+      font-size: 0.8em;
+      padding-right: 0.5em;
+    }
+  }
+}
+.more {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 3px;
+  margin: 0.5em;
+}
+.more:hover .txt {
+  background: #3498dbe8;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+.more-1 {
+  background: url("../img/more-services-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.more-2 {
+  background: url("../img/more-services-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.more-3 {
+  background: url("../img/more-services-3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.more-4 {
+  background: url("../img/more-services-4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.feature_box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.box {
+  width: 250px;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  background-color: #f6f6f6;
+  .fas,
+  .far,
+  .fab {
+    padding-right: 0.5em;
+    font-size: 1.3em;
+  }
+  p {
+    cursor: pointer;
+    transition: 0.3s all ease;
+    &:hover {
+      color: #0d6efd;
+    }
+  }
+  .fa-store {
+    color: #ffbb2c;
+  }
+  .fa-chart-bar {
+    color: #0d6efd;
+  }
+  .fa-calendar-alt {
+    color: #e80368;
+  }
+  .fa-paint-roller {
+    color: #e361ff;
+  }
+  .fa-database {
+    color: #47aeff;
+  }
+  .fa-gg-circle {
+    color: #feae7a;
+  }
+  .fa-scroll {
+    color: #33dfd5;
+  }
+  .fa-home {
+    color: #4233ff;
+  }
+  .fa-anchor {
+    color: #b49354;
+  }
+  .fa-music {
+    color: #b20969;
+  }
+  .fa-wifi {
+    color: #fb997c;
+  }
+  .fa-fingerprint {
+    color: #52d47f;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .more_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .more {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .more {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .card {
+    max-width: 600px;
+    width: 97%;
+    margin: 0.5em 0;
+  }
+  .more {
+    max-width: 600px;
+    height: 150px;
+    width: 100%;
+    margin: 0.5em 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .service-h1 {
+    font-size: 1.3em;
+  }
+  .more {
+    width: 97%;
+  }
+  .box {
+    width: 90%;
+    margin: 1em 0;
+  }
+  .service-p {
+    text-align: center;
+  }
+  .card {
+    max-width: 600px;
+    width: 95%;
+    margin: 0.5em 0;
+  }
+  .txt {
+    width: 100%;
+    left: 0;
+    margin: 0;
+    h1 {
+      font-size: 1em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+  }
+}
